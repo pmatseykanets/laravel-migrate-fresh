@@ -5,7 +5,7 @@ namespace Spatie\MigrateFresh\TableDroppers;
 use DB;
 use Illuminate\Support\Collection;
 
-class Postgresql implements TableDropper
+class Pgsql implements TableDropper
 {
     public function dropAllTables()
     {

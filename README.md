@@ -10,7 +10,7 @@
 
 Laravel has a `migrate:refresh` command to build up the database using migrations. To clear the database it'll first rollback all migrations by using the `down` method in each migration.
 
-But what if you don't use the `down` method inside your projects. Your migrations will fail as the database isn't cleared first.
+But what if you don't use the `down` method inside your projects? The `migrate:refresh` command will fail as the database isn't cleared first.
 
 This package contains a `migrate:fresh` command that'll nuke all the tables in your database regardless of whether you've set up the `down` method in each migration.
 
@@ -24,7 +24,7 @@ The best postcards will get published on the open source page on our website.
 
 ## Requirements
 
-Currently this command only works on MySQL databases.
+This command supports MySQL and PostgreSQL databases.
 
 ## Installation
 
@@ -90,7 +90,7 @@ If you discover any security related issues, please email freek@spatie.be instea
 - [Freek Van der Herten](https://github.com/freekmurze)
 - [All Contributors](../../contributors)
 
-Initial code to drop all tables in a Postgresql db was provided by [Jonathan Reinink](https://gist.github.com/reinink)
+Initial code to drop all tables in a Postgresql db was provided by [Jonathan Reinink](https://gist.github.com/reinink) and reviewed by [Peter Matseykanets](https://github.com/pmatseykanets).
 
 ## About Spatie
 Spatie is a webdesign agency based in Antwerp, Belgium. You'll find an overview of all our open source projects [on our website](https://spatie.be/opensource).

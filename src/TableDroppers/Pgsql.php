@@ -37,7 +37,7 @@ class Pgsql implements TableDropper
     protected function getTables($schema)
     {
         return collect(
-            DB::select("SELECT tablename FROM pg_catalog.pg_tables WHERE schemaname = ?", [$schema])
+            DB::select('SELECT tablename FROM pg_catalog.pg_tables WHERE schemaname = ?', [$schema])
         )->pluck('tablename');
     }
 

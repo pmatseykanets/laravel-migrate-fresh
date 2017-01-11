@@ -14,6 +14,6 @@ class Sqlite implements TableDropper
             unlink($dbPath);
         }
 
-        fclose(fopen($dbPath, 'w'));
+        touch($dbPath);
     }
 }
